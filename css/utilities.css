@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #c72727;
+  --secondary-color: #f99500;
+  --light-color: #f3f3f3;
+  --dark-color: #333;
+  --max-width: 1100px;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.header-font {
+  font-family: 'Staatliches', cursive;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.active {
+  background-color: var(--primary-color);
+  color: #fff !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.bg-light {
+  background-color: var(--light-color);
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.btn-primary:hover, .btn-secondary:hover, .btn-dark:hover {
+  opacity: 0.9;
+}
+
+.category {
+  display: inline-block;
+  border-radius: 15px;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.category-sports {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.category-ent {
+  background-color: #a66bbe;
+  color: #fff;
+}
+
+.category-tech {
+  background-color: #009cff;
+  color: #fff;
+}
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+}
+ 
+.items-center {
+  place-items: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
